@@ -19,4 +19,5 @@ use Illuminate\Support\Facades\Route;
 // Route::put('users/{id}', 'UserController@update');
 // Route::delete('users/{id}','UserController@destroy');
 
+Route::post('login', 'AuthController@login');
 Route::apiResource('users', 'UserController');
