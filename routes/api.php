@@ -28,4 +28,5 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::put('users/password','UserController@updatePassword');
 
     Route::apiResource('users', 'UserController');
+    Route::apiResource('roles', 'RoleController');
 });
